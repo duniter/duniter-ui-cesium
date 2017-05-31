@@ -17,7 +17,7 @@ module.exports = {
         const filestream = fs.createReadStream(path.join(__dirname, '/cesium/', subpath))
         filestream.pipe(res)
         filestream.on('error', (e) => {
-          res.send(500).body(e)
+          res.send(500, e)
         })
       })
     }
