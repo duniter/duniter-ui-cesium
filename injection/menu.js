@@ -113,7 +113,7 @@
     var walletHeight = parseInt(localStorage.getItem('wallet_height')) || 1000;
     var walletWidth = parseInt(localStorage.getItem('wallet_width')) || 1400;
 
-    openNewTab (window.location.origin + '/duniter-ui-cesium/cesium/index.html', {
+    window.openModule ('/duniter-ui-cesium/cesium/index.html', {
       position: 'center',
       height: walletHeight,
       width: walletWidth,
